@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import assert from 'node:assert/strict';
 import { analyze, searchScriptures, generatePrayer } from './services/selfguide';
 import { verseById } from './data';

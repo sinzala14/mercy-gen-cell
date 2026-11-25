@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mercy-gen-cell-selfguide",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-04-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "GEMINI_MODEL": "gemini-2.5-flash"
+  }
+  // Set secrets via Wrangler CLI (never commit them):
+  //   npx wrangler secret put GEMINI_API_KEY
+  //   npx wrangler secret put SPIRITUAL_GUIDE_WHATSAPP_NUMBER
+}
