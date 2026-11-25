@@ -26,13 +26,15 @@ function buildModels(src: EnvSource): string[] {
 const initialEnv: EnvSource = typeof process !== 'undefined' && process.env ? (process.env as EnvSource) : {};
 const initialModels = buildModels(initialEnv);
 
+const DEFAULT_WHATSAPP = '260776840567';
+
 export const config = {
   port: Number(initialEnv.PORT || 3000),
   geminiKey: initialEnv.GEMINI_API_KEY || '',
   geminiModel: initialModels[0],
   geminiModels: initialModels,
-  // Digits only, with country code. Set in .env or Cloudflare secrets, never in code.
-  whatsapp: (initialEnv.SPIRITUAL_GUIDE_WHATSAPP_NUMBER || '').replace(/\D/g, ''),
+  // Digits only, with country code.
+  whatsapp: (initialEnv.SPIRITUAL_GUIDE_WHATSAPP_NUMBER || DEFAULT_WHATSAPP).replace(/\D/g, ''),
 };
 
 export function applyEnv(src: EnvSource) {
@@ -41,7 +43,5 @@ export function applyEnv(src: EnvSource) {
   if (src.GEMINI_API_KEY !== undefined) config.geminiKey = src.GEMINI_API_KEY || '';
   config.geminiModel = models[0];
   config.geminiModels = models;
-  if (src.SPIRITUAL_GUIDE_WHATSAPP_NUMBER !== undefined) {
-    config.whatsapp = (src.SPIRITUAL_GUIDE_WHATSAPP_NUMBER || '').replace(/\D/g, '');
-  }
+  config.whatsapp = (src.SPIRITUAL_GUIDE_WHATSAPP_NUMBER || DEFAULT_WHATSAPP).replace(/\D/g, '');
 }

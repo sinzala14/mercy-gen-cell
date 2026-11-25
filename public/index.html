@@ -79,7 +79,7 @@ nav a.on svg{transform:scale(1.08);stroke-width:2.25}
 }
 
 /* Layout & Containers */
-main{max-width:800px;margin:0 auto;padding:14px 18px calc(120px + env(safe-area-inset-bottom,0px))}
+main{max-width:800px;margin:0 auto;padding:14px 18px 20px}
 .hero{
   position:relative;overflow:hidden;
   background:
@@ -221,6 +221,16 @@ textarea{min-height:125px;resize:vertical;line-height:1.55}
 }
 .band-info{flex:1;min-width:230px}
 .band-info p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.credit-wrap{max-width:800px;margin:0 auto;padding:0 18px calc(120px + env(safe-area-inset-bottom,0px))}
+.credit-card{
+  background:rgba(255,255,255,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1px solid var(--border);border-radius:16px;padding:14px 18px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  box-shadow:0 4px 14px rgba(28,25,23,.03);font-size:13.5px;color:var(--muted);
+}
+.credit-card b{color:var(--b800)}
+.credit-card a{color:var(--b700);font-weight:600;text-decoration:none}
+.credit-card a:hover{text-decoration:underline}
 .alert{
   background:linear-gradient(135deg,var(--b900),#991B1B);color:#fff;
   border-radius:18px;padding:22px;margin:16px 0;box-shadow:0 12px 28px rgba(124,45,18,.28);
@@ -322,6 +332,12 @@ small,.note{color:var(--muted);font-size:13px;line-height:1.45}
   <div class="pill-badge"><span class="pill-dot"></span><span>Verified KJV Scripture</span></div>
 </header>
 <main id="app"></main>
+<footer class="credit-wrap">
+  <div class="credit-card">
+    <span>Developed by <b>Voxread Studio</b></span>
+    <a href="mailto:voxreadstudio@gmail.com">voxreadstudio@gmail.com</a>
+  </div>
+</footer>
 <nav id="nav" aria-label="Primary"></nav>
 <script>
 const LOGO="assets/logo-white.png";
@@ -383,13 +399,14 @@ const vBlock=v=>`<div class="v-card reveal">
   <div class="v-why"><span class="lab">Why it may be relevant</span><p>${esc(v.why)}</p></div>
 </div>`;
 
+const DEFAULT_WA=`https://wa.me/260776840567?text=${encodeURIComponent("Hello, I came through Mercy Gen Cell SelfGuide and I'd like to speak with a spiritual guide about something I'm going through.")}`;
 const waCard=u=>`<div class="band reveal">
   <div class="band-info">
     <span class="lab">Human Support</span>
     <h3>Sometimes you need a person, not another screen.</h3>
-    <p>Connect directly on WhatsApp with a <b>human spiritual guide</b> from Mercy Gen Cell, not the AI.</p>
+    <p>Connect directly with a real person from the Mercy Gen Cell spiritual guidance team on WhatsApp for personal, human support beyond AI assistance.</p>
   </div>
-  <div>${u?`<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">Continue on WhatsApp</a>`:`<button class="btn" disabled>Continue on WhatsApp</button><p class="note" style="margin:6px 0 0">WhatsApp number not configured yet.</p>`}</div>
+  <div><a class="btn" href="${esc(u||DEFAULT_WA)}" target="_blank" rel="noopener">Continue on WhatsApp</a></div>
 </div>`;
 
 const errCard=(title,msg,retryAction)=>`<div class="err-card">
