@@ -144,6 +144,8 @@ textarea{min-height:125px;resize:vertical;line-height:1.55}
 }
 .btn.o:hover:not([disabled]){background:var(--b50);border-color:var(--b600)}
 .btn.sm{padding:7px 13px;font-size:12.5px;border-radius:10px}
+.btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn.sm svg{width:13px;height:13px}
 .btn[disabled]{opacity:.65;cursor:not-allowed;transform:none}
 .btn-ring{
   width:15px;height:15px;border:2.2px solid rgba(255,255,255,.35);border-top-color:#fff;
@@ -443,8 +445,7 @@ home:()=>`<div class="hero">
   <div class="input-meta">
     <div class="row" style="margin:4px 0">
       <button class="btn" type="button" id="go" data-action="run">Start SelfGuide</button>
-      <a class="btn o" href="#bible">Browse Scripture</a>
-      <a class="btn o" href="${YV_HOME}" target="_blank" rel="noopener">Open YouVersion Bible ${extIco}</a>
+      <a class="btn o" href="${YV_HOME}" target="_blank" rel="noopener">YouVersion Bible ${extIco}</a>
     </div>
     <small class="note">Nothing you write is stored or logged.</small>
   </div>
