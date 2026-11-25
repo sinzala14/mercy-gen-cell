@@ -1,0 +1,250 @@
+{
+ "fear": {
+  "n": "Fear & anxiety",
+  "k": [
+   "afraid",
+   "fear",
+   "anxi",
+   "worr",
+   "scared",
+   "panic",
+   "nervous"
+  ],
+  "v": [
+   "is41",
+   "ph4",
+   "jo1",
+   "ps23"
+  ],
+  "e": "You may be carrying fear or worry about something you cannot control.",
+  "q": [
+   "What exactly am I afraid of?",
+   "What fears are influencing my choices?",
+   "What would bringing this to God in prayer look like today?"
+  ],
+  "s": "Write down the fear in one sentence, then spend ten minutes praying about only that."
+ },
+ "decision": {
+  "n": "Decision & direction",
+  "k": [
+   "decision",
+   "decide",
+   "direction",
+   "lost",
+   "confus",
+   "future",
+   "choose",
+   "purpose",
+   "unsure",
+   "don't know what"
+  ],
+  "v": [
+   "pr3",
+   "jm1",
+   "ps119",
+   "ro8"
+  ],
+  "e": "You may be facing uncertainty and a desire for clear direction.",
+  "q": [
+   "What decision am I trying to make?",
+   "What would trusting God look like here?",
+   "Who wise and mature could I talk to?"
+  ],
+  "s": "List your options, pray over them, and ask a trusted pastor or mature Christian for counsel."
+ },
+ "grief": {
+  "n": "Grief & discouragement",
+  "k": [
+   "grief",
+   "griev",
+   "died",
+   "death",
+   "sad",
+   "depress",
+   "heartbroken",
+   "cry",
+   "discourag",
+   "hopeless"
+  ],
+  "v": [
+   "ps34",
+   "mt11",
+   "ps46",
+   "ps23"
+  ],
+  "e": "You may be hurting deeply, and that pain deserves to be taken seriously.",
+  "q": [
+   "What have I lost, and can I say it honestly to God?",
+   "Who can sit with me in this?"
+  ],
+  "s": "Tell one trusted person how you are really doing today."
+ },
+ "forgive": {
+  "n": "Relationships & forgiveness",
+  "k": [
+   "forgiv",
+   "relationship",
+   "marriage",
+   "husband",
+   "wife",
+   "family",
+   "friend",
+   "anger",
+   "angry",
+   "betray",
+   "hurt",
+   "break up",
+   "ended"
+  ],
+  "v": [
+   "ep4",
+   "ps34",
+   "jm1"
+  ],
+  "e": "You may be dealing with hurt in a relationship and the struggle to forgive.",
+  "q": [
+   "What exactly hurt me?",
+   "What would forgiveness look like, and what would it not mean?",
+   "Do I need a conversation, or time?"
+  ],
+  "s": "Pray for the person by name, then decide on one small, honest step."
+ },
+ "money": {
+  "n": "Provision & work",
+  "k": [
+   "job",
+   "money",
+   "financ",
+   "debt",
+   "bills",
+   "provide",
+   "business",
+   "poor",
+   "rent",
+   "fees",
+   "fail"
+  ],
+  "v": [
+   "ph419",
+   "mt6",
+   "ps46",
+   "pr3"
+  ],
+  "e": "You may be under financial or work pressure and wondering how you will provide.",
+  "q": [
+   "What is my most urgent need right now?",
+   "What is within my control today?"
+  ],
+  "s": "Write your top three needs and one practical action for each, then pray over the list."
+ },
+ "temptation": {
+  "n": "Temptation & struggle",
+  "k": [
+   "tempt",
+   "sin ",
+   "porn",
+   "addict",
+   "falling back",
+   "same mistake",
+   "struggl"
+  ],
+  "v": [
+   "co10",
+   "jm4",
+   "is41"
+  ],
+  "e": "You may be in a repeated struggle and feeling discouraged by it.",
+  "q": [
+   "When and where does this struggle usually start?",
+   "Who can hold me accountable?"
+  ],
+  "s": "Tell a trusted mature Christian about the struggle and agree on a practical safeguard."
+ },
+ "lonely": {
+  "n": "Loneliness & distance from God",
+  "k": [
+   "alone",
+   "lonely",
+   "abandon",
+   "forsaken",
+   "god left",
+   "far from god",
+   "empty"
+  ],
+  "v": [
+   "ps34",
+   "is41",
+   "jm4",
+   "jo1"
+  ],
+  "e": "You may feel alone, or that God is distant.",
+  "q": [
+   "When did I last feel close to God?",
+   "Who could I reach out to today?"
+  ],
+  "s": "Message or visit one person today, and tell God honestly how you feel."
+ },
+ "close": {
+  "n": "Drawing closer to God",
+  "k": [
+   "closer to god",
+   "closer",
+   "relationship with god",
+   "pray more",
+   "grow in faith",
+   "faith"
+  ],
+  "v": [
+   "jm4",
+   "ps119",
+   "jn3"
+  ],
+  "e": "You may be longing to know God more deeply.",
+  "q": [
+   "What keeps me from setting time aside for God?",
+   "What passage could I read daily this week?"
+  ],
+  "s": "Set a fixed ten minutes each day for reading and prayer this week."
+ },
+ "rest": {
+  "n": "Weariness & overwhelm",
+  "k": [
+   "tired",
+   "exhaust",
+   "overwhelm",
+   "burn",
+   "heavy",
+   "stress",
+   "too much"
+  ],
+  "v": [
+   "mt11",
+   "ps46",
+   "ph4"
+  ],
+  "e": "You may be exhausted and carrying more than you can hold.",
+  "q": [
+   "What am I carrying that I was not meant to carry alone?",
+   "What can I put down or ask help with?"
+  ],
+  "s": "Pick one burden to hand to someone else or to rest from this week."
+ },
+ "gratitude": {
+  "n": "Gratitude",
+  "k": [
+   "thank",
+   "grateful",
+   "blessed",
+   "gratitude"
+  ],
+  "v": [
+   "th5",
+   "ph4"
+  ],
+  "e": "You may be in a season of thankfulness, which is worth marking.",
+  "q": [
+   "What am I most thankful for today?"
+  ],
+  "s": "Write down three things you are thankful for and thank God for each."
+ }
+}
